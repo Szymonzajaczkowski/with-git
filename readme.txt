@@ -1,6 +1,7 @@
-Ala ma kota a kuba sie nudzi
-linijaka 2 
-czy 4
+Kuba sie nudzi
+I jest zestresowany 
 5 linijka zwana 4
 I'm freak and i known it
 I heard voices
+And another line
+What I'm doing??!!
