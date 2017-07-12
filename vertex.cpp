@@ -82,7 +82,10 @@ void Graph::greedyColoring()
 // Driver program to test above function
 int main()
 {
-    Graph g1(5);
+	int edgenumber;
+	cout <<"Give number of edges"<<endl;
+	cin >> edgenumber;
+    Graph g1(edgenumber);
     g1.addEdge(0, 1);
     g1.addEdge(0, 2);
     g1.addEdge(1, 2);
