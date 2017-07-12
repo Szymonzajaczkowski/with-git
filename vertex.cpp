@@ -64,7 +64,7 @@ void Graph::greedyColoring()
  
         result[u] = cr; // Assign the found color
  
-        // Reset the values back to false for the next iteration
+        // Reset the values back to false for the next iteration  
         for (i = adj[u].begin(); i != adj[u].end(); ++i)
             if (result[*i] != -1)
                 available[result[*i]] = false;
@@ -83,15 +83,21 @@ void Graph::greedyColoring()
 int main()
 {
 	int edgenumber;
-	cout <<"Give number of edges"<<endl;
+	cout <<"Give number of vertex"<<endl;
 	cin >> edgenumber;
     Graph g1(edgenumber);
-    g1.addEdge(0, 1);
+    cout <<endl<<"Give vertex conection: [#] [#]"<<endl;
+    for(int i=0; i<edgenumber; i++){
+    	int a, b;
+    	cin >> a >> b;
+    	g1.addEdge(a, b);
+    }
+    /*g1.addEdge(0, 1);
     g1.addEdge(0, 2);
     g1.addEdge(1, 2);
     g1.addEdge(1, 3);
     g1.addEdge(2, 3);
-    g1.addEdge(3, 4);
+    g1.addEdge(3, 4);*/
     cout << "Coloring of graph 1 \n";
     g1.greedyColoring();
  
